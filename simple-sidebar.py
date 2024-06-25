@@ -36,6 +36,18 @@ CONTENT_STYLE = {
     "padding": "2rem 1rem",
 }
 
+breadcrumb = dbc.Breadcrumb(
+    items=[
+        {"label": "Docs", "href": "/docs", "external_link": True},
+        {
+            "label": "Components",
+            "href": "/docs/components",
+            "external_link": True,
+        },
+        {"label": "Breadcrumb", "active": True},
+    ],
+)
+
 sidebar = html.Div(
     [
         html.H2("Sidebar", className="display-4"),
